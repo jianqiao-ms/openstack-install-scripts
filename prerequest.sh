@@ -9,7 +9,7 @@ fi
 
 if [ "yum upgrade | grep kernel | wc -l" != "0" ]
 then
-  echo "\033[;31mKERNEL UPGRADED!REBOOT TO ACTIVE NEW KERNEL\033[0m"
+  echo -e "\033[;31mKERNEL UPGRADED!REBOOT TO ACTIVE NEW KERNEL\033[0m"
   echo -n "Reboot now?(Y/N)"
   read reboot
   if [ $reboot = "Y" -o $reboot = "y" ]
