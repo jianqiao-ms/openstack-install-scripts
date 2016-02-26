@@ -18,5 +18,6 @@ then
   else
     echo "pleas reboot system before continue"
   fi
-  echo "Openstack packages install success"
 fi 
+  
+echo "Openstack packages install success"
