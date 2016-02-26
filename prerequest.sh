@@ -7,9 +7,9 @@ then
   yum install centos-release-openstack-liberty -y
 fi
 
-if [ "yum upgrade && yum update | grep kernel | wc -l" != "0" ]
+if [ "yum upgrade | grep kernel | wc -l" != "0" ]
 then
-  echo "\033[0mKERNEL UPGRADED!REBOOT TO ACTIVE NEW KERNEL\033[0m"
+  echo "\033[;31mKERNEL UPGRADED!REBOOT TO ACTIVE NEW KERNEL\033[0m"
   echo -n "Reboot now?(Y/N)"
   read reboot
   if [ $reboot = "Y" -o $reboot = "y" ]
